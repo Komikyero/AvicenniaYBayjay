@@ -1,0 +1,90 @@
+:root {
+    --BGColor: #223522;
+    --ContentBG: #E6DECC;
+}
+
+.DestinationsBG {
+    background-image: url('placeholder_festival.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    color: rgb(255, 121, 121);
+    font-size: 5rem;
+}   
+
+#DestinationsContent {
+    width: 100%;
+    height: fit-content;
+}
+#CardWrapper {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;     
+    gap: 1rem;               
+}
+
+.CardContainer {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.CardContainer p {
+    text-align: left;
+    width: 100%; 
+}
+
+.Card {
+    width: 100%;      
+    height: 100%;
+    background-color: red;
+}
+@media (max-width: 419px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 420px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 600px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 900px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1200px) /* tablet */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1536px) /* laptop */ 
+{
+}

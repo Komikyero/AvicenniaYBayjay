@@ -1,0 +1,146 @@
+:root {
+    --BGColor: #223522;
+    --ContentBG: #E6DECC;
+}
+
+.DelicaciesBG {
+    background-image: url('placeholder_delicacies.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position-y: 13%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    color: rgb(255, 121, 121);
+    font-size: 5rem;
+}
+
+#DelicaciesContentBG h1{
+    text-align: center;
+}
+
+#DelicaciesContentBG {
+    background-color: var(--ContentBG);
+}
+
+#CardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-items: center;  
+    align-items: center;  
+    gap: 0.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: fit-content;
+}
+
+.CardContainer {
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Card {
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 25rem;
+
+    position: relative;   
+    overflow: hidden;     
+}
+
+.CardInfo {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: inherit;
+    width: 100%;
+    text-align: center;
+
+    opacity: 0;              
+    transition: opacity 0.3s;
+}
+
+.Card:hover .CardInfo {
+    opacity: 1;              
+}
+
+.CardType {
+    background-color: blue;
+    padding: 1rem 2rem 1rem 2rem;
+    width: fit-content;
+}
+
+.CardName {}
+
+
+@media (max-width: 419px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 1.5rem;
+    }
+
+    #CardGrid {
+        grid-template-columns: 1fr; 
+        margin-left: 1%;
+        margin-right: 1%;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 420px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 2.5rem;
+    }
+
+    #CardGrid {
+        grid-template-columns: 1fr; 
+        margin-left: 1%;
+        margin-right: 1%;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 600px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 3rem;
+    }
+
+    #CardGrid {
+        grid-template-columns: 1fr 1fr; 
+        margin-left: 1%;
+        margin-right: 1%;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 900px)  /* mobile */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 4rem;
+    }
+
+    #CardGrid {
+        grid-template-columns: 1fr 1fr 1fr; 
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media (min-width: 1200px) /* tablet */ 
+{
+    .HomepageBG, .MainhomepageBG {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1536px) /* laptop */ 
+{
+}

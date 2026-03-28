@@ -1,0 +1,49 @@
+:root {
+    --BGColor: #223522;
+    --ContentBG: #E6DECC;
+}
+
+.HomepageBG {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--BGColor);
+}
+
+@media (max-width: 419px)  /* mobile */ 
+{
+    .HomepageBG{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 420px)  /* mobile */ 
+{
+    .HomepageBG{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 600px)  /* mobile */ 
+{
+    .HomepageBG{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 900px)  /* mobile */ 
+{
+    .HomepageBG{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1200px) /* tablet */ 
+{
+    .HomepageBG{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1536px) /* laptop */ 
+{
+}
