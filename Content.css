@@ -9,7 +9,6 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 70rem;
 
     display: flex;
     flex-direction: column;
@@ -27,7 +26,6 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
 
     display: flex;
     flex-direction: column;
@@ -38,9 +36,16 @@
     font-size: 5rem;
 }
 
+.MainhomepageBG, .HomepageBG {
+    font-size: 1.5rem;
+    height: 100vh; /* better than 70rem */
+}
+
+
 .HomeIntroBG {
     background-color: var(--ContentBG);
-    display: flex;             
+    display: grid;
+    grid-template-columns: 1fr;        
     width: 100%;
     height: fit-content;
     padding-bottom: 10%;
@@ -54,7 +59,7 @@
 
 .GreenSquare {
     background-color:#182518;
-    width: 60%;
+    width: 100%;
     height: fit-content;
 }
 
@@ -79,9 +84,9 @@
 }
 
 #InfoText{  
-    padding-bottom: 1rem;
+    padding-right: 0;
     padding-right: 50%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #Button {
@@ -103,15 +108,16 @@
     width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr; /* mobile = 1 column */
+    gap: 20px;
     justify-items: center;  
     align-items: center;  
-    gap: 20px;
 }
 
 .PhotoCard {
     background-color: rgb(255, 188, 188);
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     height: inherit;
 }
 
@@ -127,104 +133,45 @@
     width: 100%;
 }
 
-@media (max-width: 419px)  /* mobile */ 
-{
-    .HomepageBG, .MainhomepageBG {
-        font-size: 1.5rem;
-    }
-
-    .HomeContentBG {
-        grid-template-columns: 1fr; 
-    }
-
-    .HomeIntroBG {
-        display: grid;       
-        grid-template-columns: 1fr; 
-    }
-
-    .GreenSquare {
-        width: 100%;
-    }
-}
-
-@media (min-width: 420px)  /* mobile */ 
-{
-    .HomepageBG, .MainhomepageBG {
-        font-size: 2.5rem;
-    }
-
-    .HomeContentBG {
-        grid-template-columns: 1fr; 
-    }
-
-    .HomeIntroBG {
-        display: grid;       
-        grid-template-columns: 1fr; 
-    }
-
-    .GreenSquare {
-        width: 100%;
-    }
-}
-
-@media (min-width: 600px)  /* mobile */ 
-{
-    .HomepageBG, .MainhomepageBG {
+@media (min-width: 600px) {
+    .MainhomepageBG, .HomepageBG {
         font-size: 3rem;
     }
 
     .HomeContentBG {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr 1fr;
     }
 
     .HomeIntroBG {
-        display: grid;       
-        grid-template-columns: 1fr; 
+        display: flex;
     }
 
-    .GreenSquare {
-        width: 100%;
+    #InfoText {
+        padding-right: 10%;
+        font-size: 2rem;
     }
 }
 
-@media (min-width: 900px)  /* mobile */ 
-{
-    .HomepageBG, .MainhomepageBG {
+@media (min-width: 900px) {
+    .MainhomepageBG, .HomepageBG {
         font-size: 4rem;
     }
 
     .HomeContentBG {
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-
-    .HomeIntroBG {
-        display: flex;             
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .GreenSquare {
-        width: 60%;
+        max-width: 60%;
+    }
+
+    #InfoText {
+        padding-right: 50%;
     }
 }
 
-@media (min-width: 1200px) /* tablet */ 
-{
-    .HomepageBG, .MainhomepageBG {
+@media (min-width: 1200px) {
+    .MainhomepageBG, .HomepageBG {
         font-size: 5rem;
     }
-
-    .HomeContentBG {
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-
-    .HomeIntroBG {
-        display: flex;             
-    }
-
-    .GreenSquare {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1536px) /* laptop */ 
-{
 }
