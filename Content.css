@@ -68,6 +68,10 @@
     margin: 0 auto;
     opacity: 60%;
     padding-bottom: 2rem;
+
+    width: 100%;       
+    max-width: 700px;   
+    height: auto;       
 }
 
 .InfoAndLearnBTN {
