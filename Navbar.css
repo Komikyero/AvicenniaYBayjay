@@ -44,7 +44,7 @@
 
 
 #SideBar{
-    z-index: 1;
+    z-index: 1000;
     position: fixed;
     right: -500rem;
     top: 0;
