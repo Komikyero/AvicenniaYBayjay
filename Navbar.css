@@ -46,12 +46,13 @@
 #SideBar{
     z-index: 1000;
     position: fixed;
-    right: -500rem;
+    transform: translateX(100%); /* hide off-screen */
     top: 0;
+    right: 0;
     width: 80%;
     height: 100%;
     background: white;
-    transition: 0.3s; 
+    transition: transform 0.3s ease; 
 }
 
 .Sidebar_Container li {
@@ -70,13 +71,15 @@
 }
 
 #Overlay {
-    z-index: 0;
+    z-index: 999;
     position: fixed;
-    right: -500rem;
+    transform: translateX(100%); /* hide off-screen */
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgb(37, 37, 37, 0.5);
+    transition: transform 0.3s ease; 
 }
 
 a {
