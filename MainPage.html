@@ -29,7 +29,7 @@
                 <li id="DropDown">☰</li>
             </ul>
         </nav>
-        
+        <div id="Overlay" style="z-index: 999;"></div> <!--always at bottom-->
         <div id="SideBar" style="z-index: 1000;">
             <ul class="Sidebar_Container">
                 <li id="Close">→</li>
@@ -59,7 +59,7 @@
                     <p id="InfoText">
                         Avicennia y Bayjay is a student-owned business inspired by the culture and natural heritage of Ibajay. Managed by students of STI College, it offers locally inspired food while promoting sustainability, community, and cultural tourism.
                     </p>
-                    <p id="Button">Learn More</p>
+                    <a href="Aboutus.html" id="Button">Learn More</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                 <div class="PhotoCardCard"></div>
             </div>
             <div class="PhotoCard">
-                <p>Join the Festivals</p>
+                <p>Join the Festivities</p>
                 <div class="PhotoCardCard"></div>
             </div>
             <div class="PhotoCard">
@@ -80,14 +80,22 @@
         </div>
 
         <footer>
-            <img src="whitefb_bg.png" alt="Facebook" width="50" height="50" style="margin-bottom: 0.5rem; margin-top: 0;"/> <!--change later-->
-            <p>
-                © 2026 Avicennia Y Bayjay | Municipality of Ibajay, Aklan  
-                All Rights Reserved.
+            <div id="footerwrap">
+                <div class="fContentWrap">
+                    <img id="fblogo" src="whitefb_bg.png" alt="Facebook"/> 
+                    <p>Avicennia Y Bayjay</p>
+                </div>
+                <div class="fContentWrap">
+                    <img id="emaillogo" src="emailf.png" alt="Facebook"/> 
+                    <p>avicenniaybayjay@gmail.com</p>
+                </div>
+            </div>
+            <p id="copyright">
+                © 2026 Avicennia Y Bayjay. All Rights Reserved.
             </p>
         </footer>
         </div>
-        <div id="Overlay" style="z-index: 999;"></div> <!--always at bottom-->
+        
 
     <script src="navbar.js"></script>
     <script src="Splash.js"></script>

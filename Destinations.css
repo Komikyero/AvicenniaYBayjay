@@ -25,6 +25,13 @@
     width: 100%;
     height: fit-content;
 }
+
+#DestinationsContent h1{
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 2rem 0 2rem 0;
+} 
+
 #CardWrapper {
     display: flex; 
     flex-direction: column; 
