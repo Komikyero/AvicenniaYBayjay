@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="Delicacies.css"/>
     </head>
     <body>
-        <nav id="Navbar" style="z-index: 1000;"> <!--Desktop NavBar-->
+         <nav id="Navbar" style="z-index: 998;"> <!--Desktop NavBar-->
+            <img id="logodesk" src="logo.png" alt="logo"/>
             <ul class="Navbar_items">
                 <li><a href="MainPage.html">Home</a></li>
                 <li><a href="Delicacies.html">Delicacies</a></li>
@@ -20,6 +21,7 @@
         </nav>
 
         <nav id="Mobile_Navbar" style="z-index: 1000;"> <!--Mobile NavBrar-->
+            <img id="logo" src="logo.png" alt="logo"/> 
             <ul class="Mobile_Navbar_items">
                 <li id="DropDown">☰</li>
             </ul>
@@ -49,7 +51,7 @@
                 <div class="CardContainer">
                     <div class="Card">
                         <div class="CardInfo">
-                            <h1>Putanginamo Trisha Mae</h1>
+                            <h1>test</h1>
                         </div>
                     </div>
                     <p class="CardType">Type</p>
@@ -116,7 +118,13 @@
                 </div>
                 <div class="fContentWrap">
                     <img id="emaillogo" src="emailf.png" alt="Facebook"/> 
-                    <p>avicenniaybayjay@gmail.com</p>
+                    <a id="footerEmail" href="mailto:avicenniaybayjay@gmail.com" 
+                    onclick="if(window.innerWidth > 768){ 
+                                    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=avicenniaybayjay@gmail.com'); 
+                                    return false;
+                                }">
+                    avicenniaybayjay@gmail.com
+                    </a>
                 </div>
             </div>
             <p id="copyright">
