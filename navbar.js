@@ -22,4 +22,5 @@ links.forEach(link => {
     if (link.getAttribute("href") === currentPage) {
         link.classList.add("Show");
     }
+    2
 });

@@ -6,67 +6,90 @@
         <title>Avicennia Y Bayjay</title> <!--Change Later-->
         <link rel="icon" type="image/x-icon" href="placeholder_bridge.jpg">
         <link rel="stylesheet" href="Navbar.css"/>
-        <link rel="stylesheet" href="Festivals.css"/>
+        <link rel="stylesheet" href="DestinationsIMG.css"/>
     </head>
     <body>
-        <nav id="Navbar" style="z-index: 998;"> <!--Desktop NavBar-->
-            <img id="logodesk" src="logo.png" alt="logo"/>
-            <ul class="Navbar_items">
-                <li><a href="MainPage.html">Home</a></li>
-                <li><a href="Delicacies.html">Delicacies</a></li>
-                <li><a href="Festivals.html">Festivals</a></li>
-                <li><a href="Destinations.html">Destinations</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-
-        <nav id="Mobile_Navbar" style="z-index: 1000;"> <!--Mobile NavBrar-->
-            <img id="logo" src="logo.png" alt="logo"/> 
-            <ul class="Mobile_Navbar_items">
-                <li id="DropDown">☰</li>
-            </ul>
-        </nav>
-        
-        <div id="SideBar" style="z-index: 1000;">
-            <ul class="Sidebar_Container">
-                <li id="Close">→</li>
-                <li><a href="MainPage.html">Home</a></li>
-                <li><a href="Delicacies.html">Delicacies</a></li>
-                <li><a href="Festivals.html">Festivals</a></li>
-                <li><a href="Destinations.html">Destinations</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-            </ul>
+        <div id="ImageTapped">
+            <img id="Back" src="back.png" height="20" width="20"/>
+            <div id="DisplayCard" class="CardTapped"></div>
         </div>
+        <div id="ImageisTapped">
+            <nav id="Navbar" style="z-index: 998;"> <!--Desktop NavBar-->
+                <img id="logodesk" src="logo.png" alt="logo"/>
+                <ul class="Navbar_items">
+                    <li><a href="MainPage.html">Home</a></li>
+                    <li><a href="Delicacies.html">Delicacies</a></li>
+                    <li><a href="Festivals.html">Festivals</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
 
-        <!--Main Content-->
+            <nav id="Mobile_Navbar" style="z-index: 1000;"> <!--Mobile NavBrar-->
+                <img id="logo" src="logo.png" alt="logo"/> 
+                <ul class="Mobile_Navbar_items">
+                    <li id="DropDown">☰</li>
+                </ul>
+            </nav>
+            
+            <div id="SideBar" style="z-index: 1006;">
+                <ul class="Sidebar_Container">
+                    <li id="Close">→</li>
+                    <li><a href="MainPage.html">Home</a></li>
+                    <li><a href="Delicacies.html">Delicacies</a></li>
+                    <li><a href="Festivals.html">Festivals</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
 
-        <div id="FestivalsContent">
-        </div>
-    
-         <footer>
-            <div id="footerwrap">
-                <div class="fContentWrap">
-                    <img id="fblogo" src="whitefb_bg.png" alt="Facebook"/> 
-                    <p>Avicennia Y Bayjay</p>
-                </div>
-                <div class="fContentWrap">
-                    <img id="emaillogo" src="emailf.png" alt="Facebook"/> 
-                    <a id="footerEmail" href="mailto:avicenniaybayjay@gmail.com" 
-                    onclick="if(window.innerWidth > 768){ 
-                                    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=avicenniaybayjay@gmail.com'); 
-                                    return false;
-                                }">
-                    avicenniaybayjay@gmail.com
-                    </a>
+            <!--Main Content-->
+            
+            <div id="FestivalsContent">
+            
+                <a href="Destinations.html">
+                    <img src="back.png" height="20" width="20"/>
+                </a>
+                <h1>Enjoy Ibajay: Join the Festivals</h1>
+                <p id="FIntro">
+                    Festivals of Ibajay
+                    Experience the vibrant culture of Ibajay through its festivals. 
+                    From colorful parades to traditional rituals, 
+                    each celebration tells a story of our community's heritage. 
+                    Explore these events to discover the spirit and traditions that make Ibajay unique.
+                </p>
+                <div class="Card"></div>
+                <div id="CardWrap">
+                    <div class="Card"></div>
+                    <div class="Card"></div>
                 </div>
             </div>
-            <p id="copyright">
-                © 2026 Avicennia Y Bayjay. All Rights Reserved.
-            </p>
-        </footer>
+            
+            <footer>
+                <div id="footerwrap">
+                    <div class="fContentWrap">
+                        <img id="fblogo" src="whitefb_bg.png" alt="Facebook"/> 
+                        <p>Avicennia Y Bayjay</p>
+                    </div>
+                    <div class="fContentWrap">
+                        <img id="emaillogo" src="emailf.png" alt="Facebook"/> 
+                        <a id="footerEmail" href="mailto:avicenniaybayjay@gmail.com" 
+                        onclick="if(window.innerWidth > 768){ 
+                                        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=avicenniaybayjay@gmail.com'); 
+                                        return false;
+                                    }">
+                        avicenniaybayjay@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <p id="copyright">
+                    © 2026 Avicennia Y Bayjay. All Rights Reserved.
+                </p>
+            </footer>
 
-        <div id="Overlay"></div> <!--always at bottom-->
-
+            <div id="Overlay"></div> <!--always at bottom-->
+        </div>
     <script src="navbar.js"></script>
+    <script src="ImageCards.js"></script>
     </body>
 </html>

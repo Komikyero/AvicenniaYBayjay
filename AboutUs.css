@@ -3,47 +3,46 @@
     --ContentBG: #E6DECC;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .HomepageBG {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-color: var(--BGColor);
+    box-sizing: border-box;
+    padding: 20vh 5% 1rem 5%;
 }
 
-@media (max-width: 419px)  /* mobile */ 
-{
-    .HomepageBG{
-        font-size: 1.5rem;
+.HomepageBG p {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.GroupPicture {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 1rem;
+    background-color: red;
+}
+
+@media (min-width: 600px) {
+    .Wrapper {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .GroupPicture {
+        min-width: 50%;
     }
 }
 
-@media (min-width: 420px)  /* mobile */ 
-{
-    .HomepageBG{
-        font-size: 2.5rem;
-    }
+@media (min-width: 900px) {
+
 }
 
-@media (min-width: 600px)  /* mobile */ 
-{
-    .HomepageBG{
-        font-size: 3rem;
-    }
-}
+@media (min-width: 1200px) {
 
-@media (min-width: 900px)  /* mobile */ 
-{
-    .HomepageBG{
-        font-size: 4rem;
-    }
-}
-
-@media (min-width: 1200px) /* tablet */ 
-{
-    .HomepageBG{
-        font-size: 5rem;
-    }
-}
-
-@media (min-width: 1536px) /* laptop */ 
-{
 }

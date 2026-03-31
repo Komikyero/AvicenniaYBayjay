@@ -3,6 +3,10 @@
     --ContentBG: #E6DECC;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .DelicaciesBG {
     background-image: url('placeholder_delicacies.jpg');
     background-size: cover;

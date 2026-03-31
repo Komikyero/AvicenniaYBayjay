@@ -3,6 +3,10 @@
     --ContentBG: #E6DECC;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -23,7 +27,6 @@ body {
     font-size: 5rem;
 }
 
-/*Home*/
 .HomepageBG {
     background-image: url('placeholder_bridge.jpg');
     background-size: cover;
@@ -42,7 +45,7 @@ body {
 
 .MainhomepageBG, .HomepageBG {
     font-size: 1.5rem;
-    height: 100vh; /* better than 70rem */
+    height: 100vh; 
 }
 
 
@@ -110,14 +113,14 @@ body {
 }
 
 #Button:hover {
-}s
+}
 
 .HomeContentBG {
     background-color: #223522;
     width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr; /* mobile = 1 column */
+    grid-template-columns: 1fr; 
     gap: 20px;
     justify-items: center;  
     align-items: center;  
@@ -143,8 +146,8 @@ body {
 }
 
 .Container {
-    max-width: 2400px;   /* limits how wide it can get */
-    margin: 0 auto;      /* centers it */
+    max-width: 2400px;   
+    margin: 0 auto;      
     width: 100%;
 }
 

@@ -1,0 +1,114 @@
+:root {
+    --BGColor: #223522;
+    --ContentBG: #E6DECC;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+
+#FestivalsContent {
+    background-color: var(--ContentBG);
+    width: 100%;
+    min-height: 100vh; 
+    box-sizing: border-box;
+    padding: 20vh 5% 5rem 5%;
+}
+
+#FestivalsContent h1 {
+    
+}
+
+#CardWrap {
+    gap: 1rem;
+}
+
+.Card {
+    background-image: url('ph2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    width: 100%;
+    height: 25rem;
+    
+    margin-bottom: 1rem;
+    position: relative;   
+    overflow: hidden;     
+    cursor: pointer; 
+}
+
+.CardTapped {
+    background-image: url('ph2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    width: 100%;
+    height: 25rem;
+    
+    margin-bottom: 1rem;
+    position: relative;   
+    overflow: hidden;    
+}
+
+#Back {
+    cursor: pointer;
+}
+
+#CardWrap .Card:nth-of-type(1) {
+    background-image: url(images\ \(3\).jpg);
+    width: 100%;
+    height: 18rem;
+}
+
+#CardWrap .Card:nth-of-type(2) {
+    background-image: url(ph1.jpg);
+    width: 100%;
+    height: 25rem;
+}
+
+#ImageTapped {
+    background-color: var(--ContentBG);
+    display: none;
+    height: 100vh;
+    padding: 20vh 5% 0 5%;
+}
+
+#ImageTapped.Hide {
+    display: none;
+}
+
+#ImageTapped.Show {
+    display: block;
+}
+
+#ImageisTapped.Show {
+    display: block;
+}
+
+#ImageisTapped.Hide {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    #CardWrap {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #CardWrap .Card:nth-of-type(1) {
+        width: 30%;
+    }
+    #CardWrap  .Card:nth-of-type(2) {
+        width: 70%;
+    }
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

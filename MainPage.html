@@ -10,19 +10,19 @@
         <link rel="stylesheet" href="Splash.css"/>  
     </head>
     <body>
-        <div id="Splash">
-            <!--Put logo here-->
-        </div>
+        <div id="Splash"></div>
 
         <nav id="Navbar" style="z-index: 998;"> <!--Desktop NavBar-->
-            <img id="logodesk" src="logo.png" alt="logo"/>
-            <ul class="Navbar_items">
-                <li><a href="MainPage.html">Home</a></li>
-                <li><a href="Delicacies.html">Delicacies</a></li>
-                <li><a href="Festivals.html">Festivals</a></li>
-                <li><a href="Destinations.html">Destinations</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-            </ul>
+            <div id="HorizontalWrapper">
+                <img id="logodesk" src="logo.png" alt="logo"/>
+                <ul class="Navbar_items">
+                    <li><a href="MainPage.html">Home</a></li>
+                    <li><a href="Delicacies.html">Delicacies</a></li>
+                    <li><a href="Festivals.html">Festivals</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
         </nav>
 
         <nav id="Mobile_Navbar" style="z-index: 1000;"> <!--Mobile NavBrar-->
@@ -32,8 +32,7 @@
             </ul>
         </nav>
         
-        <div id="Overlay" style="z-index: 999;"></div> <!--always at bottom-->
-        <div id="SideBar" style="z-index: 1000;">
+        <div id="SideBar" style="z-index: 1006;">
             <ul class="Sidebar_Container">
                 <li id="Close">→</li>
                 <li><a href="MainPage.html">Home</a></li>
@@ -107,7 +106,7 @@
         </footer>
         </div>
         
-
+    <div id="Overlay"></div> <!--always at bottom-->
     <script src="navbar.js"></script>
     <script src="Splash.js"></script>
     </body>
