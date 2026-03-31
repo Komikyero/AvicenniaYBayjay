@@ -30,7 +30,6 @@
     justify-content: flex-end;
     width: 100%;
     padding-right: 2rem;
-    margin-left: 2%;
     gap: 13%;   
     flex-wrap: wrap;
 }
@@ -46,17 +45,6 @@
     align-items: center;      
     height: inherit;  
     width: 100%;
-    border: 2px solid rgb(234, 0, 255);
-}
-
-#Navbar {
-    border: 2px solid red;
-}
-#logodesk {
-    border: 2px solid blue;
-}
-.Navbar_items {
-    border: 2px solid green;
 }
 
 #Mobile_Navbar{
@@ -332,15 +320,15 @@ footer {
 
 @media (max-width: 1536px) and (min-width: 900px) {
     .Navbar_items {
-        gap: 2rem;         /* reduce spacing between links */
-        padding-right: 1rem; /* reduce right padding if needed */
+        gap: 12;         
+        padding-right: 1rem; 
     }
 
     .Navbar_items a {
-        font-size: 1.3rem;  /* slightly smaller font */
+        font-size: 1.3rem;  
     }
 
     #logodesk {
-        width: 8rem;        /* slightly smaller logo if necessary */
+        width: 10rem;        
     }
 }

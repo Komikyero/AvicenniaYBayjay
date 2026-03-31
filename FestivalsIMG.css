@@ -5,6 +5,7 @@
  
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 #FestivalsContent {
@@ -71,6 +72,7 @@ html {
 #ImageTapped {
     background-color: var(--ContentBG);
     display: none;
+    height: 100vh;
     padding: 20vh 5% 5rem 5%;
 }
 
