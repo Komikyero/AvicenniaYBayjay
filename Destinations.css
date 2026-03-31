@@ -56,7 +56,10 @@
 .Card {
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-image: url('ph1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 600px) {

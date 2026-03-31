@@ -105,11 +105,12 @@ body {
     font-size: 1.5rem;
     cursor: pointer; 
     outline: none; 
+    text-decoration: none;
+    color: black;
 }
 
 #Button:hover {
-    text-decoration: underline;
-}
+}s
 
 .HomeContentBG {
     background-color: #223522;

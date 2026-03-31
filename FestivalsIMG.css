@@ -1,0 +1,43 @@
+:root {
+    --BGColor: #223522;
+    --ContentBG: #E6DECC;
+}
+ 
+
+#FestivalsContent {
+    background-color: var(--ContentBG);
+    width: 100%;
+    min-height: 100vh; 
+    padding-bottom: 5rem; 
+    box-sizing: border-box;
+}
+
+#FestivalsContent h1 {
+    padding-top: 50%;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    #FestivalsContent h1 {
+        padding-top: 10%;
+
+    }
+
+}
+
+@media (min-width: 900px) {
+    .FestivalsBG {
+        font-size: 4rem;
+    }
+    #CardWrapper {
+        grid-template-columns: 1fr 1fr; 
+        gap: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .FestivalsBG {
+        font-size: 5rem;
+    }
+}

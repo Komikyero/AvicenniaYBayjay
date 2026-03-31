@@ -3,7 +3,6 @@
     --ContentBG: #E6DECC;
 }
 
-/* Default / mobile-first styles */
 .FestivalsBG {
     background-image: url('placeholder_festival.jpg');
     background-size: cover;
@@ -23,30 +22,41 @@
 }   
 
 #FestivalsContent {
-    background-color: rgb(0, 136, 255);
+    background-color: var(--ContentBG);
     width: 100%;
-    min-height: 100vh; /* at least full screen */
-    padding-bottom: 5rem; /* ensures footer is visible */
+    min-height: 100vh; 
+    padding-bottom: 5rem; 
     box-sizing: border-box;
+}
+
+#FestivalsContent h1 {
+    text-align: center;
 }
 
 #CardWrapper {
     display: grid;
+    gap: 2rem;
     grid-template-columns: 1fr; 
 }
 
 .FestivalCard {
     position: relative;
-    height: 50rem;
+    height: 50vh;
     margin: 0;
 }
 
 #Card1 {
-    background-color: red;
+    background-image: url('ph3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #Card2 {
-    background-color: rgb(0, 255, 34);
+    background-image: url('images\ \(3\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .CardInfo {
@@ -76,6 +86,7 @@
     }
     #CardWrapper {
         grid-template-columns: 1fr 1fr; 
+        gap: 0;
     }
 }
 
