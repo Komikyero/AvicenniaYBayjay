@@ -30,8 +30,11 @@
     justify-content: flex-end;
     width: 100%;
     padding-right: 2rem;
-    gap: 13%;   
-    flex-wrap: wrap;
+    gap: 2rem;   
+}
+
+.Navbar_items li {
+    white-space: nowrap;
 }
 
 .Navbar_items a {
@@ -44,6 +47,7 @@
     display: flex;
     align-items: center;      
     height: inherit;  
+    justify-content: space-between;
     width: 100%;
     border: 2px solid rgb(234, 0, 255);
 }
@@ -290,6 +294,11 @@ footer {
     .Navbar_items a {
         font-size: 1.3rem;
         color: white;
+    }
+
+    .Navbar_items {
+        gap: 15%;         
+        padding-right: 1rem; 
     }
 
     .Navbar_items a::after {
