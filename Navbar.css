@@ -30,7 +30,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-right: 2rem;
 }
 
 .Navbar_items li {
@@ -296,9 +295,6 @@ footer {
         color: white;
     }
 
-    .Navbar_items {
-        padding-right: 1rem; 
-    }
 
     .Navbar_items a::after {
         background: rgb(255, 255, 255);
