@@ -45,6 +45,17 @@
     align-items: center;      
     height: inherit;  
     width: 100%;
+    border: 2px solid rgb(234, 0, 255);
+}
+
+#Navbar {
+    border: 2px solid red;
+}
+#logodesk {
+    border: 2px solid blue;
+}
+.Navbar_items {
+    border: 2px solid green;
 }
 
 #Mobile_Navbar{
@@ -277,7 +288,7 @@ footer {
     }
 
     .Navbar_items a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: white;
     }
 
@@ -320,7 +331,7 @@ footer {
 
 @media (max-width: 1536px) and (min-width: 900px) {
     .Navbar_items {
-        gap: 12;         
+        gap: 12%;         
         padding-right: 1rem; 
     }
 
