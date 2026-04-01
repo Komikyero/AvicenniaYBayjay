@@ -277,13 +277,6 @@ footer {
     }
 }
 
-@media (max-width: 899px) {
-    .Navbar_items {
-        gap: 2rem;         
-        padding-right: 1rem; 
-    }
-}
-
 @media (min-width: 900px)  
 {
     body {
@@ -345,10 +338,6 @@ footer {
 }
 
 @media (max-width: 1536px) and (min-width: 900px) {
-    .Navbar_items {
-        padding-right: 1rem; 
-    }
-
     .Navbar_items a {
         font-size: 1.3rem;  
     }
