@@ -1,0 +1,25 @@
+:root {
+    --BGColor: #172501;
+    --ContentBG: #FFF7E0;
+    --Primary-Color: #250F02;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #FFFCF2;
+}
+
+#DNavbar {
+    background-color: #172501;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+Header {
+    background-color: #172501;
+}

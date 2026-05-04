@@ -3,25 +3,20 @@
 }
 
 :root {
-    --BGColor: #223522;
+    --BGColor: #172501;
 }
 
 #Navbar {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 7rem;
-    background-color: #2C432D;
-    border-radius: 0 0 20px 20px;
-
-    width: 80%;
+    height: 8rem;
+    width: 100%;
 }
 
 #logodesk {
     width: 10rem;
     height: auto;
-    transform: translate(20%, 22%);
+    transform: translate(20%, 9%);
     margin-right: 2rem;
 }
 
@@ -63,9 +58,21 @@
 
 #Mobile_Navbar{
     display: none;
-    background-color: #2C432D;
     position: fixed;
     width: 100%;
+    height: 5rem;
+}
+
+.static {
+    background-color: rgba(0, 0, 0, 0.151);
+    backdrop-filter: blur(3px);
+
+    transition: all 0.5s;
+}
+
+.static.scrolling {
+    background-color: rgba(1, 36, 2, 0.699);
+    backdrop-filter: blur(3px);
 }
 
 #logo {
@@ -74,8 +81,8 @@
     top: 50%; 
     transform: translateY(-30%); 
 
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .Mobile_Navbar_items {
@@ -86,12 +93,13 @@
 #DropDown {
     list-style: none;
     text-align: end;
-    margin: 1.5rem;
-    font-size: 2rem;
-    color: white;
-    font-weight: bolder;
+    margin: 1rem;
 }
 
+#burger {
+    width: 3rem;
+    height: 3rem;
+}
 
 #SideBar{
     position: fixed;
@@ -183,7 +191,6 @@ footer {
     font-weight: bold;
     background-color: var(--BGColor);
     color:white;
-    padding: 2rem;
     display: flex;
     justify-content: center;  
     align-items: center;      
@@ -197,7 +204,6 @@ footer {
 
 #copyright {
     font-size: 0.65rem;
-    padding-bottom: 2rem;
 }
 
 #fblogo {
@@ -225,6 +231,16 @@ footer {
     color:white;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+#FFooter {
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+}
+
+#FFooter p {
+    padding: 1rem;
 }
 
 @media (max-width: 419px)  

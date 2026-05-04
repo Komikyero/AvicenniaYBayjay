@@ -7,80 +7,133 @@
         <link rel="icon" type="image/x-icon" href="placeholder_bridge.jpg">
         <link rel="stylesheet" href="Navbar.css"/>
         <link rel="stylesheet" href="Content.css"/>
+        <link rel="stylesheet" href="Carousels.css"/>
         <link rel="stylesheet" href="Splash.css"/>  
+        <link rel="stylesheet" href="ProductsContent.css"/>  
     </head>
     <body>
         <div id="Splash">
             <img id="SplashIMG" src="logo.png"/>
         </div>
 
-        <nav id="Navbar" style="z-index: 998;"> <!--Desktop NavBar-->
-            <div id="HorizontalWrapper">
-                <img id="logodesk" src="logo.png" alt="logo"/>
-                <ul class="Navbar_items">
-                    <li><a href="MainPage.html">Home</a></li>
-                    <li><a href="Delicacies.html">Delicacies</a></li>
-                    <li><a href="Festivals.html">Festivals</a></li>
-                    <li><a href="Destinations.html">Destinations</a></li>
-                    <li><a href="Aboutus.html">About Us</a></li>
-                </ul>
+        <nav id="Navbar" class="static" style="z-index: 998;"> <!--Desktop NavBar-->
+            <div class="ContentContainer">
+                <div id="HorizontalWrapper">
+                    <img id="logodesk" src="logo.png" alt="logo"/>
+                    <ul class="Navbar_items">
+                        <li><a href=".MainhomepageBG">Home</a></li>
+                        <li><a href=".Destinations">Destinations</a></li>
+                        <li><a href=".Weaving">Products</a></li>
+                        <li><a href="Destinations.html">Destinations</a></li>
+                        <li><a href="Aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <nav id="Mobile_Navbar" style="z-index: 1000;"> <!--Mobile NavBrar-->
+        <nav id="Mobile_Navbar" class="static" style="z-index: 1000;"> <!--Mobile NavBrar-->
             <img id="logo" src="logo.png" alt="logo"/> 
             <ul class="Mobile_Navbar_items">
-                <li id="DropDown">☰</li>
+                <li id="DropDown"><img id="burger" src="humburder.png"/> </li>
             </ul>
         </nav>
         
         <div id="SideBar" style="z-index: 1006;">
             <ul class="Sidebar_Container">
                 <li id="Close">→</li>
-                <li><a href="MainPage.html">Home</a></li>
-                <li><a href="Delicacies.html">Delicacies</a></li>
-                <li><a href="Festivals.html">Festivals</a></li>
-                <li><a href="Destinations.html">Destinations</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Destinations">Destinations</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Festival">Destinations</a></li>
+                <li><a href="#History">History</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
             </ul>
         </div>
 
         <!--Main Content-->
         <div class="Container">
-        <div class="MainhomepageBG">
-            <h3 style="color: #FFC421;">paradise in seclusion</h3>
-            <h1 style="color: white; font-weight: bolder;">Ibajay</h1>
+        <div class="MainhomepageBG" id="Home">
+
+            <section aria-label="HeroPhotos">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active><img src="ph1.jpg"></li>
+                        <li class="slide"><img src="ph2.jpg"></li>
+                        <li class="slide"><img src="ph3.jpg"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div id="HeroText" class="ContentContainer">
+            <!-- add text here -->
+             <p>IBAJAY, AKLAN</p>
+             <h2>PARADISE</h2>
+             <h1>in Seclusion</h1>
+             <p>Tucked away from the crowds, Ibajay is where untouched nature, rich culture, and warm hospitality create the perfect escape.</p>
+            </div>
+        </div>
+        
+        <div class="Destinations" id="Destinations">
+            <div id="InfoWrap">
+                <p id="InfoText">
+                    Adaptive text here
+                </p>
+                <a href="DestinationsMore.html" id="Button">Learn More</a>
+            </div>
         </div>
 
-        <div class="HomeIntroBG">
-            <div class="GreenSquare">
-                <img src="mangroves.png" alt="Mangroves"/>
-                <p class="IntroText">We are</p>
-                <p class="IntroText">Avicennia Y Bayjay</p>
-            </div>
-            <div class="InfoAndLearnBTN">
-                <div id="InfoWrap">
-                    <p id="InfoText">
-                        Avicennia y Bayjay is a student-owned business inspired by the culture and natural heritage of Ibajay. Managed by students of STI College, it offers locally inspired food while promoting sustainability, community, and cultural tourism.
-                    </p>
-                    <a href="Aboutus.html" id="Button">Learn More</a>
+        <div class="Weaving" id="Products">
+            <div id="WContentBox" class="Contentbox">
+                <!-- Content -->
+                 <div class="ContentGrid">
+                    <img src="ph1.jpg" class="SideImg">
+
+                    <div class="ItemContainer">
+                        <h1>Threads of Tradition</h1>
+                        <p>Experience the artistry of nito weaving, abaca fibers, and handcrafted pottery. Rooted in culture and refined through generations, these locally made products showcase both functionality and timeless design.</p>
+                        <p>In Ibajay, weaving is more than a craft—it is a heritage passed down through generations. Using locally gathered nito vines and abaca fibers, artisans transform natural materials into functional and decorative pieces that reflect the community’s patience, skill, and deep connection to nature. Each weave carries the story of daily life shaped by tradition and resourcefulness.</p>
+                        <img src="ph1.jpg" class="SmallImg">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="HomeContentBG">
-            <div class="PhotoCard">
-                <p>Experience the Taste</p>
-                <div class="PhotoCardCard"></div>
+        <div class="Pottery">
+            <div id="PContentBox" class="Contentbox">
+                <!-- Content -->
+                                  <div class="ContentGrid">
+                    <img src="ph1.jpg" class="SideImg">
+
+                    <div class="ItemContainer">
+                        <h1>Threads of Tradition</h1>
+                        <p>Experience the artistry of nito weaving, abaca fibers, and handcrafted pottery. Rooted in culture and refined through generations, these locally made products showcase both functionality and timeless design.</p>
+                        <p>In Ibajay, weaving is more than a craft—it is a heritage passed down through generations. Using locally gathered nito vines and abaca fibers, artisans transform natural materials into functional and decorative pieces that reflect the community’s patience, skill, and deep connection to nature. Each weave carries the story of daily life shaped by tradition and resourcefulness.</p>
+                        <img src="ph1.jpg" class="SmallImg">
+                    </div>
+                </div>
             </div>
-            <div class="PhotoCard">
-                <p>Join the Festivities</p>
-                <div class="PhotoCardCard"></div>
-            </div>
-            <div class="PhotoCard">
-                <p>Discover Ibajay</p>
-                <div class="PhotoCardCard"></div>
-            </div>
+        </div>
+
+        <div class="Border"></div>
+
+        <div class="Products">
+
+        </div>
+
+        <div class="Border"></div>
+
+        <div class="Festival" id="Festival">
+
+        </div>
+
+        <div class="History" id="History">
+
+        </div>
+
+        <div class="AboutUs" id="AboutUs">
+
         </div>
 
         <footer>
@@ -102,13 +155,16 @@
                     </a>
                 </div>
             </div>
-            <p id="copyright">
-                © 2026 Avicennia Y Bayjay. All Rights Reserved.
-            </p>
+            <div id="FFooter">
+                <p id="copyright">
+                    © 2026 Avicennia Y Bayjay. All Rights Reserved.
+                </p>
+            </div>
         </footer>
         </div>
         
     <div id="Overlay"></div> <!--always at bottom-->
+    <script src="content.js"></script>
     <script src="navbar.js"></script>
     <script src="Splash.js"></script>
     </body>

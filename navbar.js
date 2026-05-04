@@ -24,3 +24,19 @@ links.forEach(link => {
     }
     2
 });
+
+const SCROLL_THRESHOLD = 100;
+
+const MHeader = document.getElementById("Mobile_Navbar");
+const DHeader = document.getElementById("Navbar");
+
+document.addEventListener('scroll', () => {
+    const top = document.documentElement.scrollTop;
+    if (top > SCROLL_THRESHOLD) {
+        MHeader.classList.add("scrolling");
+        DHeader.classList.add("scrolling");
+    } else {
+        MHeader.classList.remove("scrolling");
+        DHeader.classList.remove("scrolling");
+    }
+})

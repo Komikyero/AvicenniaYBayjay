@@ -1,6 +1,7 @@
 :root {
-    --BGColor: #223522;
-    --ContentBG: #E6DECC;
+    --BGColor: #172501;
+    --ContentBG: #FFF7E0;
+    --Primary-Color: #250F02;
 }
 
 html {
@@ -13,19 +14,37 @@ body {
 }
 
 .MainhomepageBG {
-    background-image: url('placeholder_bridge.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('placeholder_bridge.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    justify-content: center;
+
+    color: white;
+}
+
+#HeroText {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
-    align-items: center; 
     justify-content: center;
 
-    color: rgb(255, 121, 121);
-    font-size: 5rem;
+    padding: 60px;
+    color: white;
+
+    pointer-events: none;
+}
+
+.MainhomepageBG p{
+    font-size: 0.7rem;
 }
 
 .HomepageBG {
@@ -50,51 +69,18 @@ body {
 }
 
 
-.HomeIntroBG {
+.Destinations {
     background-color: var(--ContentBG);
-    display: grid;
-    grid-template-columns: 1fr;        
     width: 100%;
-    height: fit-content;
-    padding-bottom: 10%;
-}
-
-.IntroText  {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    color: white;
-}
-
-.GreenSquare {
-    background-color:#182518;
-    width: 100%;
-    padding-bottom: 2rem;
-    height: fit-content;
-}
-
-.GreenSquare img {
-    display: block; 
-    margin: 0 auto;
-    opacity: 60%;
-    padding-bottom: 2rem;
-
-    width: 100%;       
-    max-width: 700px;   
-    height: auto;       
-}
-
-.InfoAndLearnBTN {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    color: black;
-    align-items: flex-end; 
+    height: 100vh;
+    text-align: center;
 }
 
 #InfoWrap {
     padding: 1rem;
     padding-top: 10.5rem;
     padding-bottom: 0;
+    text-align: center;
 }
 
 #InfoText{  
@@ -102,10 +88,7 @@ body {
 }
 
 #Button {
-    display: inline-block;
-    border: 1px solid black; 
     margin-top: 1rem;
-    padding: 1rem 3rem;
     font-size: 1.5rem;
     cursor: pointer; 
     outline: none; 
@@ -113,38 +96,30 @@ body {
     color: black;
 }
 
-#Button:hover {
+.Festival {
+    background-color: var(--Primary-Color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.HomeContentBG {
-    background-color: #223522;
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px;
-    justify-items: center;  
-    align-items: center;  
-    padding-bottom: 4rem;
+.History {
+    background-color: rgb(248, 253, 234);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.PhotoCard {
-    margin-top: 4rem;
-    width: 80%;
-    max-width: 20rem;
-    height: inherit;
-
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
+.AboutUs {
+    background-color: var(--Primary-Color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.PhotoCardCard {
-    background-color: rgb(255, 255, 255);
-    margin-top: 1rem;
-    width: 100%;
-    height: 60vh;
-}
 
 .Container {
     max-width: 2400px;   
@@ -152,61 +127,49 @@ body {
     width: 100%;
 }
 
+.ContentContainer {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
 @media (min-width: 600px) {
     .MainhomepageBG, .HomepageBG {
         font-size: 3rem;
     }
 
-    .HomeContentBG {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .HomeIntroBG {
-        display: flex;
+    .MainhomepageBG p{
+        font-size: 1rem;
     }
 
     #InfoText {
-        padding-right: 10%;
         font-size: 1.5frem;
     }
 
     #InfoWrap {
-        padding: 2rem;
-        padding-top: 8.5rem;
         padding-bottom: 0;
     }
 
     #Button {
-        padding: 2rem 5rem;
         font-size: 2.5rem;
     }
 
     .IntroText  {
         font-size: 3rem;
-        padding-left: 1rem;
         color: white;
     }
 
-    .GreenSquare {
-        padding-bottom: 1rem;
+    .ContentContainer {
+        margin-right: 5%;
+        margin-left: 5%;
     }
+    
+
 }
 
 @media (min-width: 900px) {
     .MainhomepageBG, .HomepageBG {
         font-size: 4rem;
-    }
-
-    .HomeContentBG {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .GreenSquare {
-        max-width: 60%;
-    }
-
-    #InfoText {
-        padding-right: 50%;
     }
 }
 
