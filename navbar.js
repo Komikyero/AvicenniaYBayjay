@@ -2,27 +2,34 @@ const DropDown = document.getElementById("DropDown");
 const SideBar = document.getElementById("SideBar");
 const Overlay = document.getElementById("Overlay");
 
-
 const Close = document.getElementById("Close");
     
+function closeSidebar() {
+    SideBar.classList.remove('Show');
+    Overlay.classList.remove('Show');
+}
+
     DropDown.addEventListener('click', function() {
         SideBar.classList.add('Show');
         Overlay.classList.add('Show');
 });
 
-    Close.addEventListener('click', function() {
-        SideBar.classList.remove('Show');
-        Overlay.classList.remove('Show');
-});
+    Close.addEventListener('click', closeSidebar);
 
 const currentPage = window.location.pathname.split("/").pop();
 const links = document.querySelectorAll("nav a");
+const mobilelinks = document.querySelectorAll(".Sidebar_Container a");
 
 links.forEach(link => {
     if (link.getAttribute("href") === currentPage) {
         link.classList.add("Show");
     }
-    2
+});
+
+mobilelinks.forEach(link => {
+    link.addEventListener("click", () => {
+        closeSidebar();
+    });
 });
 
 const SCROLL_THRESHOLD = 100;
